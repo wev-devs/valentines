@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Flowers</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Valentine's Day Flowers</h1>
+    </header>
+    
+    <main>
+        <div class="flower-selection">
+            <h2>Select Your Flower</h2>
+            <div class="flowers">
+                <div class="flower" onclick="selectFlower('Roses')">
+                    <img src="roses.jpg" alt="Roses">
+                    <center><p>Roses</p></center>
+                </div>
+                <div class="flower" onclick="selectFlower('Tulips')">
+                    <img src="tulips.jpg" alt="Tulips">
+                    <center><p>Tulips</p></center>
+                </div>
+                <div class="flower" onclick="selectFlower('Lilies')">
+                    <img src="lilies.jpg" alt="Lilies">
+                    <center><p>Lilies</p></center>
+                </div>
+            </div>
+        </div>
+        
+        <div class="selected-flower" id="selected-flower" style="display: none;">
+            <h2>Your Selected Flower:</h2>
+            <center><p id="flower-name"></p></div></center>
+            <div id="flower-letter" style="display: none;"></div>
+        </div>
+    </main>
+
+    <footer>
+        <h4>&copy; 2023 Valentine's Day Flowers</h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
